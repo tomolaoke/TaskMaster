@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster - Create Task</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+ 
+
+  <!-- Create Task Section -->
+  <main>
+    <section>
+      <h1>TaskMaster</h1>
+      <form id="create-task-form">
+        <!-- Input for Task Title -->
+        <input type="text" id="title" placeholder="Title" aria-label="Task Title" required />
+
+        <!-- Input for Task Description -->
+        <input type="text" id="description" placeholder="Description" aria-label="Task Description" required />
+
+        <!-- Input for Task Deadline -->
+        <input type="date" id="deadline" aria-label="Task Deadline" required />
+
+        <!-- Select for Task Priority -->
+        <select id="priority" aria-label="Task Priority" required>
+          <option value="" disabled selected>Select Priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit">Create Task</button>
+        <button onclick="logout()">Logout</button> <!-- Example logout button -->
+      </form>
+    </section>
+
+    <!-- Task List Section -->
+    <section>
+      <h2>Task List</h2>
+      <ul id="task-list" aria-label="List of Tasks">
+        <!-- Dynamically populated tasks -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 ΞDΛtomola° Oke | 3MTT SOftware Deveelopment Cohort II Fellow. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
